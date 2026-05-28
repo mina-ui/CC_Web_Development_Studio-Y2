@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mina's Galaxy</title>
+    <link rel="icon" href="../images/kittymail100.gif" type="image/gif" />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <header>
+      <a href="#" id="cvLink" class="nav-link">cv</a>
+      <a href="#" id="helloLink" class="nav-link">hello</a>
+
+      <div class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="dropdownMenuLink"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          //
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#" data-filter="all">all</a></li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="dreaming"
+              >dreaming</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="meeting">meeting</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="playing">playing</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="making">making</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" data-filter="resting">resting</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="cvClose">&times;</span>
+        <p>this is the cv</p>
+      </div>
+    </div>
+
+    <div id="helloModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="helloClose">&times;</span>
+        <p>
+          Hi, I'm Mina! This is my little corner of this cosmic cyberspace
+          ☄︎₊˚⊹☆ <br />
+          It took a lot of heart, head and community, so I hope you spend a
+          while and enjoy yourself ♡✧˚ ༘ ⋆｡♡˚
+        </p>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="starContainer category-dreaming grow">
+      <a href="my north star/myNorthStar.html">
+        <img
+          src="images/northStar.gif"
+          class="northStar"
+          alt="a gif of a star sparkling"
+        />
+        <p class="title">My North Star</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-dreaming grow">
+      <a href="javascript:void(0);" id="dreaming">
+        <!-- chatGPT for finding this href ^ -->
+        <img
+          src="images/dreaming.png"
+          class="dreaming"
+          alt="a drawing of a pink star and a smaller white star in the centre"
+        />
+        <p class="title">My Dreams</p>
+      </a>
+    </div>
+
+    <div id="videoContainer">
+      <iframe
+        id="videoPlayer"
+        src="https://www.youtube.com/embed/jrXARFgjTyo?si=aDMsn6nLFE2TNfJ2&amp;controls=0&amp;start=38"
+        title="Han Kang Speech"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <div class="starContainer category-meeting grow">
+      <a href="meeting people/meetingPeople.html">
+        <img
+          src="images/meetingPeople.png"
+          class="meetingPeople"
+          alt="a drawing of a turquoise star filled with small circles"
+        />
+        <p class="title">Meeting You!</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-meeting grow">
+      <a href="meeting animals/meetingAnimals.html">
+        <img
+          src="images/meetingAnimals.png"
+          class="meetingAnimals"
+          alt="a drawing of a turquoise star filled with small circles"
+        />
+        <p class="title">Meeting Cute Animals ⸜(｡˃ ᵕ ˂ )⸝♡</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-playing grow">
+      <a href="playing sports/playingSports.html">
+        <img
+          src="images/playingSports.png"
+          class="playingSports"
+          alt="a drawing of a yellow circle"
+        />
+        <p class="title">Some Sports I'm Enjoying</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-playing grow">
+      <a href="playing games/playingGames.html">
+        <img
+          src="images/playingGames.png"
+          class="playingGames"
+          alt="a drawing of a yellow circle"
+        />
+        <p class="title">Some Games I Have Been Playing</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-playing grow">
+      <a href="playing food/playingFood.html">
+        <img
+          src="images/playingFood.png"
+          class="playingFood"
+          alt="a drawing of a yellow circle"
+        />
+        <p class="title">Yummy Food!</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-playing grow">
+      <a href="playing films/playingFilms.html">
+        <img
+          src="images/playingFilms.png"
+          class="playingFilms"
+          alt="a drawing of a yellow circle"
+        />
+        <p class="title">My Favourite Films Atm</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-making grow">
+      <a href="making ceramics/makingCeramics.html">
+        <img
+          src="images/makingCeramics.png"
+          class="makingCeramics"
+          alt="a drawing of a pink circle"
+        />
+        <p class="title">My Clay Friends</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-making grow">
+      <a href="making tattoos/makingTattoo.html">
+        <img
+          src="images/makingTattoo.png"
+          class="makingTattoo"
+          alt="a drawing of a pink circle"
+        />
+        <p class="title">Tattoo's I Have Done</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-making grow">
+      <a href="making tech/makingTech.html">
+        <img
+          src="images/makingTech.png"
+          class="makingTech"
+          alt="a drawing of a pink circle"
+        />
+        <p class="title">Me, Creatively Computing!</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-making grow">
+      <a href="making art/makingArt.html">
+        <img
+          class="makingArt"
+          src="images/makingArt.png"
+          alt="a drawing of a pink circle"
+        />
+        <p class="title">Arty Farty</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-resting grow">
+      <a href="resting music/restingMusic.html">
+        <img
+          src="images/restingMusic.png"
+          class="restingMusic"
+          alt="a drawing of a blue oval"
+        />
+        <p class="title">What I'm Listening To</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-resting grow">
+      <a href="resting writing/restingWriting.html">
+        <img
+          src="images/restingWriting.png"
+          class="restingWriting"
+          alt="a drawing of a blue oval"
+        />
+        <p class="title">Some Thought's I've Been Having</p>
+      </a>
+    </div>
+
+    <div class="starContainer category-resting grow">
+      <a href="resting reading/restingReading.html">
+        <img
+          src="images/restingReading.png"
+          class="restingReading"
+          alt="a drawing of a blue oval"
+        />
+        <p class="title">Book's I Have Been Reading</p>
+      </a>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          loader.style.display = "none";
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
+
+<!-- resources and tutorials i used -->
+<!-- https://goblin-heart.net/sadgrl/webmastery/layouts/ 
+https://www.youtube.com/watch?v=2O8pkybH6po
+https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/
+https://www.w3schools.com/howto/howto_css_full_page.asp 
+Used w3schools and stack overflow for almost everything
+https://www.youtube.com/watch?v=CacIQoN2Ty4
+chat gpt- specifically commented where I used it, but also would ask it for check if my code is concise and clear, using best practices etc alongside prettier extension
+https://www.w3schools.com/howto/howto_js_draggable.asp
+https://codepen.io/JoshuaDraxten/pen/AaQvWr
+https://stackoverflow.com/questions/64633821/is-there-any-way-to-use-a-gifs-in-the-title-bar
+https://www.geeksforgeeks.org/how-to-add-icon-logo-in-title-bar-using-html/
+https://medium.com/@asifulalamfahim/add-spotify-playlist-on-your-website-in-just-a-few-simple-steps-147c56cceb28
+https://formcarry.com/blog/how-to-create-a-simple-html-contact-form/
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+https://www.youtube.com/watch?v=Yf5d_Zx3AaI
+ -->

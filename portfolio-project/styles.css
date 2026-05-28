@@ -1,0 +1,376 @@
+* {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: black !important;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+  color: black !important;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.nav-link.dropdown-toggle::after {
+  content: none !important;
+}
+
+.nav-link {
+  color: black !important;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  text-decoration: underline !important;
+  color: black !important;
+}
+
+.dreaming {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  width: 200px;
+}
+
+/* #videoContainer {
+  display: none;
+  width: 560px;
+  height: 315px;
+  left: 150px;
+} */
+
+.northStar {
+  position: absolute;
+  top: 27%;
+  left: 43%;
+  width: 300px;
+}
+
+.makingArt {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  width: 150px;
+}
+
+.makingCeramics {
+  position: absolute;
+  top: 75%;
+  left: 40%;
+  width: 180px;
+}
+
+.makingTattoo {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 140px;
+}
+
+.makingTech {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  width: 110px;
+}
+
+.meetingAnimals {
+  position: absolute;
+  top: 16%;
+  left: 7%;
+  width: 145px;
+}
+
+.meetingPeople {
+  position: absolute;
+  top: 72%;
+  left: 62%;
+  width: 205px;
+}
+
+.playingFood {
+  position: absolute;
+  top: 46%;
+  left: 24%;
+  width: 95px;
+}
+
+.playingFilms {
+  position: absolute;
+  top: 82%;
+  left: 24%;
+  width: 80px;
+}
+
+.playingGames {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  width: 97px;
+}
+
+.playingSports {
+  position: absolute;
+  top: 63%;
+  left: 52%;
+  width: 100px;
+}
+
+.restingMusic {
+  position: absolute;
+  top: 34%;
+  left: 69%;
+  width: 187px;
+}
+
+.restingReading {
+  position: absolute;
+  top: 83%;
+  left: 7%;
+  width: 150px;
+}
+
+.restingWriting {
+  position: absolute;
+  top: 62%;
+  left: 36%;
+  width: 115px;
+}
+
+.title {
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  color: black;
+  font-weight: 200;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease-in-out, bottom 0.3s, ease-in-out;
+}
+
+.starContainer:hover .title {
+  opacity: 1;
+  bottom: 0;
+}
+
+.grow:hover .title {
+  visibility: visible;
+}
+
+.grow img {
+  transition: transform 1s ease;
+  display: block;
+}
+
+.grow img:hover {
+  transform: scale(1.1) !important;
+}
+
+/* chatgpt helped me position it next to the star instead of on the left side (where i couldn't get it to move from) */
+#videoContainer {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 560px;
+  height: 315px;
+  z-index: 1000;
+}
+
+#preloader {
+  background: #fff url(images/preloader.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  #preloader {
+    background: #fff url(images/preloader.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+  .dreaming {
+    position: absolute;
+    top: 10%;
+    left: 75%;
+    width: 150px;
+  }
+
+  .northStar {
+    position: absolute;
+    top: 27%;
+    left: 43%;
+    width: 200px;
+  }
+
+  .makingArt {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    width: 100px;
+  }
+
+  .makingCeramics {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    width: 130px;
+  }
+
+  .makingTattoo {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 90px;
+  }
+
+  .makingTech {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 60px;
+  }
+
+  .meetingAnimals {
+    position: absolute;
+    top: 16%;
+    left: 7%;
+    width: 95px;
+  }
+
+  .meetingPeople {
+    position: absolute;
+    top: 72%;
+    left: 62%;
+    width: 155px;
+  }
+
+  .playingFood {
+    position: absolute;
+    top: 46%;
+    left: 24%;
+    width: 45px;
+  }
+
+  .playingFilms {
+    position: absolute;
+    top: 82%;
+    left: 24%;
+    width: 30px;
+  }
+
+  .playingGames {
+    position: absolute;
+    top: 15%;
+    left: 65%;
+    width: 47px;
+  }
+
+  .playingSports {
+    position: absolute;
+    top: 63%;
+    left: 52%;
+    width: 50px;
+  }
+
+  .restingMusic {
+    position: absolute;
+    top: 34%;
+    left: 69%;
+    width: 137px;
+  }
+
+  .restingReading {
+    position: absolute;
+    top: 83%;
+    left: 7%;
+    width: 100px;
+  }
+
+  .restingWriting {
+    position: absolute;
+    top: 62%;
+    left: 36%;
+    width: 65px;
+  }
+}

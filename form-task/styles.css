@@ -1,0 +1,91 @@
+body {
+  background-color: rgb(241, 235, 227);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shape-panel {
+  position: relative;
+  width: 50%;
+  height: 600px;
+  border-radius: 50px;
+  background-color: #d1d1d1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shape-panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.shape {
+  width: 150px;
+  height: 150px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform-origin: center center;
+  margin-top: 10px;
+}
+
+/* don't know how to make gradient and option so you can see it rotate */
+.shape.animate {
+  animation: rotateScaleAnimation 3s infinite alternate;
+}
+
+@keyframes rotateScaleAnimation {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(2);
+  }
+}
+
+.paint-canvas {
+  width: 50%;
+  height: 600px;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paint-canvas h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+canvas {
+  width: fit-content;
+  border: 2px solid #ccc;
+  background-color: #fff;
+}
