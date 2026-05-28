@@ -1,0 +1,57 @@
+.playfair-display-poeticwebfont {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: rgba(176, 206, 248, 0.8);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 0px;
+}
+    
+.intro { grid-area: 1 / 1 / 2 / 2; }
+.stanzaone { grid-area: 2 / 2 / 3 / 3; }
+.stanzatwo { grid-area: 3 / 1 / 4 / 2; }
+.stanzathree { grid-area: 4 / 2 / 5 / 3; }
+.ending { grid-area: 5 / 1 / 6 / 2; }
+.image1 { grid-area: 1 / 2 / 2 / 3; }
+.image2 { grid-area: 3 / 2 / 4 / 3; }
+.image3 { grid-area: 5 / 2 / 6 / 3; }
+    
+/* my attempt wothout grid generator h2.intro { 
+    border: 2px, solid, rgba(253, 179, 251, 0.8) ;
+    border-radius: 5px;
+    padding: 10px, 5px, 10px, 5px;
+}
+
+.stanzaone {
+    border: 2px, solid, rgba(253, 179, 251, 0.8) ;
+    border-radius: 5px;
+    padding: 10px, 5px, 10px, 5px;
+}
+
+.stanzatwo {
+    border: 2px, solid, rgba(253, 179, 251, 0.8) ;
+    border-radius: 5px;
+    padding: 10px, 5px, 10px, 5px;
+}
+
+.stanzathree {
+    border: 2px, solid, rgba(253, 179, 251, 0.8) ;
+    border-radius: 5px;
+    padding: 10px, 5px, 10px, 5px;
+}
+
+.ending {
+    border: 2px, solid, rgba(253, 179, 251, 0.8) ;
+    border-radius: 5px;
+    padding: 10px, 5px, 10px, 5px;
+} 

@@ -1,0 +1,10 @@
+body {
+    background-color: rgba(245, 39, 145, 0.38);
+   }
+    
+.image1 { 
+    scale: 20%;
+    height: 100px;
+    width: 500px;
+}
+    

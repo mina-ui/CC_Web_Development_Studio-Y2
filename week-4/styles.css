@@ -1,0 +1,31 @@
+body {
+    cursor: url("hamster.jpg"), auto;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.parent {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "bed . wardrobe"
+      "friends . food";
+  }
+  
+  .bed { grid-area: bed; }
+  
+  .food { grid-area: food; }
+  
+  .wardrobe { grid-area: wardrobe; }
+  
+  .friends { grid-area: friends; }
+  
+ 
+
+    /* fix so images show up together on one screen and make cursor image of hamster */
+    

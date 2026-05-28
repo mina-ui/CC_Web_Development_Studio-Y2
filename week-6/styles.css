@@ -1,0 +1,51 @@
+body {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.solarSystem {
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+}
+
+#theSun {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* appearance: none; */
+    width: 150px;
+    height: 150px;
+    accent-color: #f0cc3e;
+    box-shadow: -5px 10px #f7e6a1;   
+}
+
+.planetOne, .planetTwo, .planetThree {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+}
+
+.planetOne {
+    width: 350px;
+    height: 350px;
+    
+}
+
+.planetTwo {
+    width: 330px;
+    height: 330px;
+}
+
+.planetThree {
+    width: 375px;
+    height: 375px;
+}

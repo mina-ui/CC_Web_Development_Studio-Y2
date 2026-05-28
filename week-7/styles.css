@@ -1,0 +1,66 @@
+body {
+    background-image: url("grid-background.jpg");
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    color: white;
+    stroke: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #da3d3d;
+  }
+
+  .rectangle {
+    position: fixed;  
+    height: 650px;
+    width: 700px;
+    border-radius: 25px;
+    background-color: #da3d3d;
+    right: 20px;    
+    top: 100px;      
+}
+
+.smallRectangle {
+    position: absolute;  
+    height: 550px;
+    width: 600px;
+    border-radius: 25px;
+    background-color: white;
+    left: 50px;      
+    top: 50px;
+}
+
+#button {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+}
+  
+.typewriter {
+    margin-top: 20px;
+    padding: 20px;
+    min-height: 100px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 24px;
+    color: black;
+    white-space: pre-line;
+}
+
+#petPokemon {
+    position: fixed;
+    left: 50px;  /* Adjust as needed */
+    top: 100px;  /* Align with your red rectangle */
+    width: 400px;  /* Adjust size as needed */
+    height: auto;
+    display: none;  /* Initially hidden */
+}
