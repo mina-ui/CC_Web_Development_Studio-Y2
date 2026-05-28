@@ -1,0 +1,22 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#restartButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}

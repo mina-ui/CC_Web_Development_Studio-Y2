@@ -1,0 +1,273 @@
+body {
+    background-image: url("wall.png");
+    background-color: #cccccc;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   }
+
+.videogames{
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    border-style: ridge;
+    border: 10px,rgba(0, 0, 0, 0.822);
+    border-width: 15px;
+    
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.silentHill {
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    background-image: url("silent-hill.jpg");
+}
+
+.gamesInfo {
+    height: auto;
+    min-height: 50px;
+    width: 75px;
+    position: relative;
+    top: 275px;
+    left: 140px;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+	transition: transform 250ms ease-in-out;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.gamesInfo:hover {
+    transform: scale(3);
+    z-index: 1;
+}
+
+.games-title {
+    font-size: 0.7rem;  
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    white-space: nowrap;  
+}
+
+.games-description {
+    font-size: 0.6rem;
+    display: none;  
+}
+
+.gamesInfo:hover .games-description {
+    display: block;
+}
+
+.sport {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    border-style: ridge;
+    border: 10px,rgba(0, 0, 0, 0.822);
+    border-width: 15px;
+    background-image: url("snoopy-skate.gif");
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.sportInfo {
+    height: auto;
+    min-height: 50px;
+    width: 75px;
+    position: relative;
+    top: 225px;
+    left: 145px;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+	transition: transform 250ms ease-in-out;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.sportInfo:hover {
+    transform: scale(3);
+    z-index: 1;
+}
+
+.sport-title {
+    font-size: 0.7rem;  
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    white-space: nowrap;  
+}
+
+.sport-description {
+    font-size: 0.6rem;
+    display: none;  
+}
+
+.sportInfo:hover .sport-description {
+    display: block;
+}
+
+.art {
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    top: 30px;
+    right: 225px;
+    border-style: ridge;
+    border: 10px,rgba(0, 0, 0, 0.822);
+    border-width: 15px;
+    background-image: url("ceramics-arts.jpg");
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.artInfo {
+    height: auto;
+    min-height: 50px;
+    width: 75px;
+    position: relative;
+    top: 275px;
+    left: 345px;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+	transition: transform 250ms ease-in-out;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.artInfo:hover {
+    transform: scale(3);
+    z-index: 1;
+}
+
+.art-title {
+    font-size: 0.7rem;  
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    white-space: nowrap;  
+}
+
+.art-description {
+    font-size: 0.6rem;
+    display: none;  
+}
+
+.artInfo:hover .art-description {
+    display: block;
+}
+
+.cooking {
+    height: 150px;
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    border-style: ridge;
+    border: 10px,rgba(0, 0, 0, 0.822);
+    border-width: 15px;
+    background-image: url("dosa.jpeg");
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.cookingInfo {
+    height: auto;
+    min-height: 50px;
+    width: 75px;
+    position: relative;
+    bottom: -175px;
+    left: 350px;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+	transition: transform 250ms ease-in-out;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.cookingInfo:hover {
+    transform: scale(3);
+    z-index: 1;
+}
+
+.cooking-title {
+    font-size: 0.7rem;  
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    white-space: nowrap;  
+}
+
+.cooking-description {
+    font-size: 0.6rem;
+    display: none;  
+}
+
+.cookingInfo:hover .cooking-description {
+    display: block;
+}
+
+.animals {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+    border-style: ridge;
+    border: 10px,rgba(0, 0, 0, 0.822);
+    border-width: 15px;
+    background-image: url("whale.jpg");
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.animalsInfo {
+    height: auto;
+    min-height: 30px;
+    width: 75px;
+    position: relative;
+    bottom: -225px;
+    right: -150px;
+    background-color: aliceblue;
+    transform-origin: bottom right;
+	transition: transform 250ms ease-in-out;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.animalsInfo:hover {
+    transform: scale(3);
+    z-index: 1;
+}
+
+.animal-title {
+    font-size: 0.7rem;  
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    white-space: nowrap;  
+}
+
+.animal-description {
+    font-size: 0.6rem;
+    display: none;  
+}
+
+.animalsInfo:hover .animal-description {
+    display: block;
+}
+
+.mirror {
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    position: absolute;
+    top: 350px;
+    right: 500px;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgba(0, 0, 0, 0.822);
+    box-shadow: 5px 10px 18px #888888;
+    overflow: hidden; 
+}
+
+#camera-feed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1); 
+}
